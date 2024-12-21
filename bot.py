@@ -5,7 +5,10 @@ from aiohttp import web
 from main.web_support import web_server
 from config import *
 import os
+from pyrogram import utils as pyroutils
 
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 class Bot(Client):    
 
